@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UFO Sightings</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<header>
+    <center>
+        <div class="jumbotron">
+            <img src="http://www.alienufosightings.co.uk/wp-content/uploads/PoliceUFOSightings.jpg" alt="UFO Sighting">
+            <h1>UFO Sightings</h1>
+        </div>
+    </center>
+</header>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="datetime" placeholder="Date">
+                    <a id="search" class="btn btn-default">Search</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="city" placeholder="City">
+                    <a id="citysearch" class="btn btn-default">Search</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="state" placeholder="State">
+                    <a id="statesearch" class="btn btn-default">Search</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="country" placeholder="Country">
+                    <a id="countrysearch" class="btn btn-default">Search</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="shape" placeholder="Shape">
+                    <a id="shapesearch" class="btn btn-default">Search</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-group">
+                    <a id="resetsearch" class="btn btn-default">Reset Search</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>City</th>
+                            <th>State</th>
+                            <th>Country</th>
+                            <th>Shape</th>
+                            <th>Duration</th>
+                            <th>Comments</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <div id="listingTable"></div>
+                <a href="javascript:prevPage()" id="btn_prev" class="btn btn-default">Back</a>
+                <a href="javascript:nextPage()" id="btn_next" class="btn btn-default">Next</a> page: <span id="page"></span>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="data.js" type="text/javascript"></script>
+    <script src="UFO_Sightings.js" type="text/javascript"></script>
+
+</body>
+
+</html>
