@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <title>Belly Button Diversity</title>
+
+</head>
+
+<body>
+    <header>
+        <center>
+            <div class="jumbotron">
+                <h1>Belly Button Diversity</h1>
+                <img src="../images/bacteria_by_filterforgedotcom.jpg" alt="Bacteria Picture">
+                <h2>Dashboard</h2>
+            </div>
+        </center>
+    </header>
+
+
+    <div id="plot"></div>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- <script src="../static/js/app.js"></script> -->
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+    <select id="selDataset" onchange="optionChanged(this.value)"></select>
+
+</body>
+
+</html>
