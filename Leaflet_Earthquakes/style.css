@@ -1,0 +1,58 @@
+/* remove default margin and padding from body */
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* set map, body, and html to 100% of the screen size */
+
+#map,
+body,
+html {
+    height: 100%;
+}
+
+
+/* misc styling of popups and legend */
+
+.leaflet-popup-content {
+    text-align: center;
+}
+
+.legend {
+    line-height: 18px;
+    color: #555;
+}
+
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 1;
+}
+
+.info {
+    padding: 6px 8px;
+    font: 14px/20px Arial, Helvetica, sans-serif;
+    background: rgba(242, 242, 242, 0.901);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+
+.info h4 {
+    margin: 0 0 5px;
+    color: black;
+}
+
+
+/* attempt to change polyline attributes - did not change color and style as intended */
+
+.my_polyline {
+    color: red;
+    stroke: red;
+    stroke-dasharray: 10, 10;
+    stroke-width: 5;
+}
